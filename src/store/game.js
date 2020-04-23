@@ -4,6 +4,7 @@ import config from '../config';
 
 const { NUM_PAIRS } = config;
 
+// Redux Toolkit uses Immer to provide immutability under the hook, even though it looks like mutable assignments
 const slice = createSlice({
   name: 'game',
   initialState: {
