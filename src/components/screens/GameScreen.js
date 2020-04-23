@@ -38,7 +38,7 @@ const GameScreen = () => {
         <PrimaryButton onPress={handleResetGame} text="Reset Game" />
         <CounterText count={totalSteps} />
       </View>
-      <FlatList keyExtractor={(item) => item.id} data={items} renderItem={({ item }) => renderCard(item)} numColumns={3} />
+      <FlatList keyExtractor={(item) => item.id} data={items} renderItem={({ item }) => renderCard(item)} numColumns={3} style={styles.flatList} />
     </View>
   );
 };
@@ -48,6 +48,7 @@ export default GameScreen;
 const styles = StyleSheet.create({
   gameScreen: {
     marginHorizontal: 10,
+    flexGrow: 1,
   },
   headerContainer: {
     flexDirection: 'row',
@@ -55,5 +56,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginHorizontal: 10,
     marginVertical: 5,
+  },
+  flatList: {
+    flex: 1,
   },
 });

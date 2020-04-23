@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
     margin: 5,
     justifyContent: 'center',
     alignItems: 'center',
-    height: MAX_HEIGHT / 4 - 10,
+    height: MAX_HEIGHT / 4.7,
   },
   flipCard: {
     alignItems: 'center',

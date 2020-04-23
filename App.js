@@ -17,6 +17,7 @@ const App = () => (
 const styles = StyleSheet.create({
   mainContainer: {
     backgroundColor: 'rgba(211, 211, 211, 0.9)',
+    flex: 1,
   },
 });
 
