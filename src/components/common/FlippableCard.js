@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react';
-import { Text, StyleSheet, TouchableOpacity, Animated } from 'react-native';
+import { Text, StyleSheet, TouchableOpacity, Animated, Dimensions } from 'react-native';
 
+const MAX_HEIGHT = Dimensions.get('window').height;
 const FlippableCard = ({ hiddenValue, onTouch, remainOpen = false }) => {
   const animatedValue = useRef(new Animated.Value(0)).current;
   const [disabled, setDisabled] = useState(false);
@@ -73,7 +74,7 @@ const styles = StyleSheet.create({
     margin: 5,
     justifyContent: 'center',
     alignItems: 'center',
-    height: 170,
+    height: MAX_HEIGHT / 4,
   },
   flipCard: {
     alignItems: 'center',
