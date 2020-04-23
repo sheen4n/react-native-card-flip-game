@@ -10,6 +10,8 @@ Completed Deployed Application can be viewed at this page.
 (https://expo.io/@sheen4n/native-card-flip-game)
 Or Scan the QR Code ![QRCode](QRCode.png)
 
+- You need to download Expo App from App Store or Google Play first.
+
 ### Demo
 
 ![Gif](RecordedCardFlip.gif)
