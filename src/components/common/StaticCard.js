@@ -1,6 +1,7 @@
 import React from 'react';
-import { Text, StyleSheet, View } from 'react-native';
+import { Text, StyleSheet, View, Dimensions } from 'react-native';
 
+const MAX_HEIGHT = Dimensions.get('window').height;
 const StaticCard = ({ value }) => {
   return (
     <View style={styles.container}>
@@ -19,7 +20,7 @@ const styles = StyleSheet.create({
     margin: 5,
     justifyContent: 'center',
     alignItems: 'center',
-    height: 170,
+    height: MAX_HEIGHT / 4.7,
   },
   card: {
     alignItems: 'center',
